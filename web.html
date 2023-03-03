@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <!--Header Start-->
+    <div class="header">
+        <div class="row">
+            <div class="logo">
+                <h1>Menu</h1>
+            </div>
+            <nav class="nav-links" id="navlinks">
+                <i class="fa fa-times hide" onclick="hide()"></i>
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>Users</li></a>
+                    <a href=""><li>Services</li></a>
+                    <a href=""><li>Contact</li></a>
+                </ul>
+            </nav>
+            <i class="fa fa-bars show" onclick="show()"></i>
+        </div>
+    </div>
+    <!--Content Start-->
+    <div class="content">
+        <h1>Responisve Animated Menu</h1>
+    </div>
+</body>
+<!--JavaScript Start-->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function show() {
+        navlinks.style.right = "0";
+    }
+
+    function hide() {
+        navlinks.style.right = "-250px";
+    }
+
+</script>
+
+</html>
